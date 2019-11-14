@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*@import url("reset.css");*/
+
+body{
+	margin: 10px;
+	background-color: beige;
+	color: firebrick;
+	font-family: Georgia,"Times New Roman", Times, serif;
+}
+/*Añadido para que el footer del index no tape el contenido*/
+html, body {
+    height: 100%;
+}
+.index  {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+.main, .footer {
+    display: table-row;
+}
+.main {
+    height: 100%;
+}
+/*Fin añadido para el footer*/
+
+#textoportada{
+	margin-left:5px;
+}
+
+h1, .menuul li {
+	font-family: Helvetica, Arial, sanserif;
+	font-weight: bold;
+}
+
+h1{
+	text-align: center;
+	font-size:1.5em;
+}
+h2{
+	font-size:1.2em;
+}
+
+article p {
+	text-indent: 2em;
+	font-size:0.9em;
+}
+
+dt{
+	text-decoration: underline;
+}
+
+/*menu*/
+
+/*Función sticky del menú */
+.deslizante {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menuul { 
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-align:center;
+	border: 1px solid firebrick;
+    border-width: 1px 0;
+	background-color: beige;
+}
+
+.menuul li{
+	display:inline;
+}
+
+.menuul a{
+	width: 70px;
+	text-align: center;
+	display:table-header-group;
+	padding: 5px;
+	font-size:0.7em;
+}
+
+.paginaactual {
+	background-color: firebrick;
+	color: beige;
+}
+
+/*forumularios*/
+fieldset{
+     display: inline-block;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+    }
+	
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.pright{
+	text-align: right;
+}
+
+input :focus{
+	border: 2px solid #385D8A;
+}
+
+a{
+	color: firebrick;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:orange;
+}
+
+.menuul li a:hover {
+	background-color: firebrick;
+	color: beige;
+}
+
+/*portfolio*/
+#portfoliosection{
+	display: flow-root;
+	text-align:center;
+	margin-right:5px;
+}
+.portfolio {
+		display: inline-block;
+/*		float: left;*/
+		border: 1px solid firebrick;
+		padding: 5px;
+		height: 320px;
+			
+}
+.portfoliotexto{
+		text-align:center;
+		padding: 10px;
+		font-weight:bold;
+		text-decoration:underline;
+	
+}
+.portfolioenlace{
+		text-align:center;
+		padding: 10px;
+	
+}
+.portfolio img {
+	max-width: 400px;
+}
+
+
+/*galería*/
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  padding-top:20px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: beige;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: firebrick;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: beige;
+  padding: 2px 16px;
+  color: firebrick;
+}
+
+img.demo {
+  opacity: 0.6;
+  max-width: 100%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*presupuestos*/
+#containerpresupuestos {
+/*    display: flex; */
+    flex-wrap: wrap; 
+}
+
+.presupuestos {
+	border: 1px solid firebrick;
+	flex-grow: 1;
+	flex-basis: 33%; 
+	padding-left:20px;
+	padding-right:10px;
+	padding-bottom:20px;
+	margin-right:5px;
+	margin-left:5px;		
+}
+
+#nombreform, #mailform, #telefonoform, #apellidoform, #motivoreunion, #presupuesto{
+		max-width:95%;
+}
+
+#descripcionform{
+		max-width:95%;
+		resize: none;
+}
+
+.labelcheck{
+	width:150px;
+	display:inline-block;
+}
+
+/*contacto*/
+#contacto {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+#contacto iframe {
+	width: 100%;
+	height: 300px; 
+	frameborder: 1; 
+	border:1px;
+	clear: both;
+}
+
+#contacto div {
+	border-top: 20px;
+	text-align:right;
+	padding: 20px;
+}
+/*footer*/
+footer div {
+	border-top: 1px solid firebrick;
+	text-align: center;
+	padding: 20px;
+	margin-top:10px;
+	font-size:0.8em;
+	
+}
+
+/* menu aside */
+
+aside {
+    width: 35%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px firebrick;
+    font-style: italic;
+    color: firebrick;
+	margin-top: 20px;
+	overflow-wrap: break-word;
+	margin-right:5px;
+	font-size:10px;
+}
+
+aside > p {
+    margin: .5rem;
+}

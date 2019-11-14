@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title>Ejercicio Obligatorio HTML/CSS</title>
+
+	<meta charset="UTF-8" />
+	<meta name="description" content="Ejercicio obligatorio HTML" />
+	<meta name="robots" content="NOFOLLOW" />
+	<meta name="Author" content="Mariano" />
+	<meta name="keywords" content="html, css, portfolio" />
+	<meta name="lang" content="es" />
+	<meta name="category" content="Prácticas" />
+	<script type="text/javascript" src="jscript/scripts.js"></script>
+	<!-- Declaración de fichero de estilos -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="estilos/little_style.css" media="screen and (max-width: 480px)" />
+	<link rel="stylesheet" type="text/css" href="estilos/great_style.css" media="screen and (min-width: 981px)" />
+	<link rel="stylesheet" type="text/css" href="estilos/medium_style.css" media="screen and (min-width: 481px)and (max-width: 980px)" />
+</head>
+<body>
+	<header>
+		<nav id="menu">
+			<ul class="menuul" id="top">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#" class="paginaactual">Portfolio</a></li>
+				<li><a href="presupuesto.html">Presupuesto</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="dondestamos.html">Donde estamos</a></li>
+			</ul>		
+		</nav>			
+		<h1>Portfolio</h1>
+	</header>
+
+	<section id="portfoliosection">
+		<article>
+			<div class="portfolio">
+				<div class="portfoliotexto">Tabuenca School</div>
+				<img src="img/tabuenca.jpg" alt="tabuencaschool" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<div class="portfolioenlace"><a href="http://tabuencaschool.verdurastabuenca.com/" target="_blank">tabuencaschool.verdurastabuenca.com</a></div>
+			</div>
+		<article>
+		</article>		
+			<div class="portfolio">
+				<div class="portfoliotexto">Inblan</div>
+				<img src="img/inblan.jpg" alt="inblan" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				<div class="portfolioenlace"><a href="http://www.renfe.com/" target="_blank">renfe.com</a></div>
+			</div>
+		<article>
+		</article>		
+			<div class="portfolio">
+				<div class="portfoliotexto">Renfe</div>
+				<img src="img/renfe.jpg" alt="renfe" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				<div class="portfolioenlace"><a href="https://www.inblan.com" target="_blank">inblan.com</a></div>
+			</div>
+		</article>
+
+	</section>
+	
+	<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/tabuenca.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/inblan.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/renfe.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/tabuenca.jpg" onclick="currentSlide(1)" alt="tabuencaschool.verdurastabuenca.com">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/inblan.jpg" onclick="currentSlide(2)" alt="renfe.com">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/renfe.jpg" onclick="currentSlide(3)" alt="inblan.com">
+    </div>
+  </div>
+</div>
+	
+	
+	<footer>
+		<div>Mariano Escudero San Jose | 2019</div>
+	</footer>
+</body>
+</html>

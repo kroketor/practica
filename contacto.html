@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title>Ejercicio Obligatorio HTML/CSS</title>
+
+	<meta charset="UTF-8" />
+	<meta name="description" content="Ejercicio obligatorio HTML" />
+	<meta name="robots" content="NOFOLLOW" />
+	<meta name="Author" content="Mariano" />
+	<meta name="keywords" content="html, css, portfolio" />
+	<meta name="lang" content="es" />
+	<meta name="category" content="Prácticas" />
+	<script type="text/javascript" src="jscript/scripts.js"></script>
+	<!-- Declaración de fichero de estilos -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="estilos/little_style.css" media="screen and (max-width: 480px)" />
+	<link rel="stylesheet" type="text/css" href="estilos/great_style.css" media="screen and (min-width: 981px)" />
+	<link rel="stylesheet" type="text/css" href="estilos/medium_style.css" media="screen and (min-width: 481px)and (max-width: 980px)" />
+</head>
+<body onload="fechaminima()">
+	<header>
+		<nav id="menu">
+			<ul class="menuul" id="top">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="presupuesto.html">Presupuesto</a></li>
+				<li><a href="#" class="paginaactual">Contacto</a></li>
+				<li><a href="dondestamos.html">Donde estamos</a></li>
+			</ul>		
+		</nav>	
+		<h1>Contacto</h1>
+	</header>
+
+<section>
+		<div class="presupuestos">
+			<header>
+				<h2>Solicite una reunión con nosotros:</h2>
+			</header>
+			<form id="formulario" action="mailto:mariano.escudero.sanjose@gmail.com" method="post" enctype="text/plain">
+				<label for="nombreform">Nombre:</label><br>
+				<input type="text" id="nombreform" size="30" maxlength="30" required autofocus><br>
+				<label for="apellidoform">Apellidos:</label><br>
+				<input type="text" id="apellidoform" size="70" maxlength="70" required autofocus><br>
+				<label for="mailform">Dirección de email:</label><br>
+				<input type="email" id="mailform" size="50" maxlength="50" required><br>
+				<label for="telefonoform">Teléfono móvil:</label><br>
+				<input type="number" id="telefonoform" size="12" maxlength="12" required><br>
+				<label for="fechareunion">Indique fecha para la reunión:</label><br>
+				<input type="date" id="fechareunion"><br>
+				<label for="motivoreunion">Motivo de la reunión:</label><br>
+				<textarea type="comment" id="motivoreunion" maxlength="800" cols="70" rows="10" required></textarea><br>
+				<input type="checkbox" id="politicasform">
+				<label for="politicasform" required>Acepto la política de privacidad de esta página.</label><br>
+				<input type="submit" value="Enviar" onclick="validar2(this.form);return false">
+				<input type="reset" value="Limpiar">
+        
+			</form>
+		</div>
+</section>
+<footer>
+			<div>Mariano Escudero San Jose | 2019</div>
+</footer>
+
+</body>
+</html>
